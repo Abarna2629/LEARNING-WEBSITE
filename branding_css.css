@@ -1,0 +1,197 @@
+/*single line command */
+/*Multi line
+command*/
+h1{
+    text-shadow: 2px 2px black;
+    text-align: center;
+}
+
+img{
+    position:absolute;
+    top:0px;
+    right:0px; /* to set the image as icon on top right corner*/
+}
+
+body{
+    background-image: url('branding.jfif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px;
+    margin:0px;
+}
+
+#subclass ul{
+    padding: 25px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 25px
+}
+ 
+.subclass1{     /*the class name in css should begin with "." */
+    position: fixed;
+    top:200px;
+    right:25px;
+    font-size:xx-large;
+    color: aqua; /*indicates text color*/
+    font-weight: bolder; 
+}
+
+#subclass2{
+    position:fixed;
+    top:500px;
+    right:25px;
+    font-size: x-large;
+    color:red;
+    border:5px solid violet; /* the border color is setted as voilet*/
+    border-radius: 2px; 
+    padding:2px;
+    font-weight: bolder;
+}
+
+#subclass3{  /*the id name in css should begin with "#" */
+    position:fixed;
+    top:600px;
+    right:25px;
+    font-size: x-large;
+    color:red;
+    border:5px solid violet;
+    border-radius: 2px;
+    font-weight: bolder;   
+    box-sizing: border-box;
+}
+
+#button1{
+    display:flex;
+    width:200px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background-image:linear-gradient(to right,darkred,darkorchid);
+    position :fixed;
+    bottom: 50px;
+    right:350px;
+}
+
+#button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*the below line is for common menubar in page 2*/
+#subclass4 {
+    text-align: center;
+    color:black;
+    background-color: white;
+    
+}
+
+/*the below line is to display content in single line*/
+#subclass4 ul{
+    color:black;
+    display: inline-flex;
+}
+
+/*the below line is to align the list inside the class*/
+#subclass4 ul li{
+    width:150px;
+    margin: 5px;
+    padding: 5 px;   
+    font-size: x-large;
+    background-color: white;
+    color:black ;
+}
+
+/*the below line is to align link inside class*/
+#subclass ul li a{
+    text-decoration: none;
+    background-color: white;
+    color:black ;
+}
+
+/*individual sub menu inside main menu*/
+.frontend{
+    display: none;
+}
+
+/*this line is used to hover the subclass with main class*/
+#subclass4 ul li:hover .frontend{
+    display:block;
+    position:absolute;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+/*this line is used to hover the subclass's unordered list with main class*/
+#subclass4 ul li:hover .frontend ul{
+    display:contents;
+    
+}
+
+/*this line is used to hover the subclass's unorderd list with main class*/
+#subclass4 ul li:hover .frontend ul li{
+    display:block;
+    margin:10px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.backend{
+    display: none;
+}
+
+#subclass4 ul li:hover .backend{
+    display:block;
+    position:absolute;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+#subclass4 ul li:hover .backend ul{
+    display:contents;
+    
+}
+
+#subclass4 ul li:hover .backend ul li{
+    display:block;
+    margin:10px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.database{
+    display: none;
+}
+
+#subclass4 ul li:hover .database{
+    display:block;
+    position:absolute;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+#subclass4 ul li:hover .database ul{
+    display:contents;
+    
+}
+
+#subclass4 ul li:hover .database ul li{
+    display:block;
+    margin:10px;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
